@@ -1,33 +1,33 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expense Tracker Pro</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Username Login</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <h1 class="main-title">Expense Tracker Pro</h1>
-   <div class="main-container">
-        <div class="balance-card">
-            <p>YOUR BALANCE</p>
-            <h1 id="balance">Rs 0.00</h1>
-            <small>dynamically updated</small>
+    <div class="container">
+        <div class="form-box" id="loginBox">
+            <h2>Login</h2>
+            <p>Enter your username and password to login.</p>
+            <input type="text" id="loginUser" placeholder="Username">
+            <input type="password" id="loginPassword" placeholder="********">
+            <button onclick="login()">Login</button>
+            <p>Don't have an account? <span onclick="toggleForm()">Sign Up</span></p>
         </div>
 
-        <div class="input-form">
-            <input type="text" id="text" placeholder="Enna selavu? (e.g. Food)">
-            <input type="number" id="amount" placeholder="Amount (Expense-kku minus - poodunga)">
-            <button class="add-btn" id="add-transaction">Add Transaction</button>
+        <div class="form-box" id="signupBox" style="display: none;">
+            <h2>Create Account</h2>
+            <p>Choose a unique username and password.</p>
+            <input type="text" id="newFullname" placeholder="Full Name">
+            <input type="text" id="newUser" placeholder="Choose Username">
+            <input type="password" id="newPassword" placeholder="Password">
+            <input type="password" id="confirmPassword" placeholder="Confirm Password">
+            <button onclick="signup()">Sign Up</button>
+            <p>Already have an account? <span onclick="toggleForm()">Login</span></p>
         </div>
-
-        <h3>History</h3>
-        <div class="list-container" id="list">
-            </div>
-
-        <p class="footer-text">core HTML5, CSS3, modern JS </p>
     </div>
-    
-    <script src="script.js"></script>
+    <script src="login.js"></script>
 </body>
 </html>

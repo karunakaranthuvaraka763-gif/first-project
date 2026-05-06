@@ -1,0 +1,33 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="main-title">Expense Tracker Pro</h1>
+   <div class="main-container">
+        <div class="balance-card">
+            <p>YOUR BALANCE</p>
+            <h1 id="balance">Rs 0.00</h1>
+            <small>dynamically updated</small>
+        </div>
+
+        <div class="input-form">
+            <input type="text" id="text" placeholder="Enna selavu? (e.g. Food)">
+            <input type="number" id="amount" placeholder="Amount (Expense-kku minus - poodunga)">
+            <button class="add-btn" id="add-transaction">Add Transaction</button>
+        </div>
+
+        <h3>History</h3>
+        <div class="list-container" id="list">
+            </div>
+
+        <p class="footer-text">core HTML5, CSS3, modern JS </p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

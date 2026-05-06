@@ -59,6 +59,6 @@ function login() {
     } else {
         alert("Intha Username-la account illai!");
     }
-    window.location.href="index.html";
+    window.location.href="dashboard.html";
 }
   
