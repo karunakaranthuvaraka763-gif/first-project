@@ -11,7 +11,7 @@ let transactions = localStorage.getItem('transactions') !== null ? localStorageT
 // Transaction-ai add seiya
 function addTransaction() {
     if (text.value.trim() === '' || amount.value.trim() === '') {
-        alert('Details-ai fill pannunga!');
+        alert('fill the details!');
     } else {
         const transaction = {
             id: Math.floor(Math.random() * 100000000),
