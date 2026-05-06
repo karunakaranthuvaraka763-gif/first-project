@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Username Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box" id="loginBox">
+            <h2>Login</h2>
+            <p>Enter your username and password to login.</p>
+            <input type="text" id="loginUser" placeholder="Username">
+            <input type="password" id="loginPassword" placeholder="********">
+            <button onclick="login()">Login</button>
+            <p>Don't have an account? <span onclick="toggleForm()">Sign Up</span></p>
+        </div>
+
+        <div class="form-box" id="signupBox" style="display: none;">
+            <h2>Create Account</h2>
+            <p>Choose a unique username and password.</p>
+            <input type="text" id="newFullname" placeholder="Full Name">
+            <input type="text" id="newUser" placeholder="Choose Username">
+            <input type="password" id="newPassword" placeholder="Password">
+            <input type="password" id="confirmPassword" placeholder="Confirm Password">
+            <button onclick="signup()">Sign Up</button>
+            <p>Already have an account? <span onclick="toggleForm()">Login</span></p>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

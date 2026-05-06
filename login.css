@@ -1,0 +1,42 @@
+body {
+    background-color: #d8cfc4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-box {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 320px;
+    text-align: left;
+}
+
+h2 { margin: 0 0 10px 0; font-size: 24px; color: #333; }
+p { font-size: 13px; color: #777; margin-bottom: 20px; }
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* padding box kulla irukka */
+}
+
+button {
+    background-color: #7c6e63;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+span { color: #7c6e63; cursor: pointer; text-decoration: underline; }
